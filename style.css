@@ -1,0 +1,310 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding: 15px 5% 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*@media screen and (min-device-width: 496px) {
+    body{
+    	padding: 15px 13% 0;
+    }
+   }
+@media screen and (min-device-width: 600px) {
+    body{
+    	padding: 15px 21% 0;
+    }
+   }*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	float: left;
+	position: relative;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+}
+.header>span{
+	font-family:Arial Black, Gadget, sans-serif;
+	font-size: 16px;
+	margin: 10px 15px;
+	color: #000;
+}
+.header>span+span{
+	color: #808080;
+	font-size: 12px;
+	margin: 0px 10px 10px;
+}
+.header>div{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	background: #fffbc8;
+	border: 1px solid #cecabf;
+	border-radius: 4px;
+	margin-left: -25px;
+    padding: 10px 0px;
+}
+.header>div>span{
+	margin-left: 25px;
+}
+@media screen and (max-device-width: 480px) {
+    .header>div{
+    	font-size: 12px;
+    }
+   }
+#container{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 15px 9% 0;
+}
+#container div{
+	display: flex;
+	flex-direction: row-reverse;
+	    margin-bottom: 10px;
+}
+#container a{
+	white-space: nowrap;
+    position: absolute;
+	left: 37%;
+    background: #b1e19b;
+    width: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 5px;
+    max-width: 240px;
+    margin-top: -5px;
+}
+@media screen and (max-device-width: 728px) {
+    #container a{
+    	max-width: 32%;
+    }
+   }
+@media screen and (max-device-width: 495px) {
+    #container a{
+    	max-width: 42%;
+    }
+   }
+
+#container a:before{
+    content: "";
+    display: inline-block;
+    border-right: 1px solid #b2b2b2;
+    height: 23px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#container>div+div>a{
+	background: #ace2f8;
+}
+#container>div span {
+	font-size: 13px;
+	font-family: Arial Black, Gadget, sans-serif;
+}
+#question{
+	    margin-bottom: 20px;
+	    font-size: 13px;
+}
+#container:before{
+    content: "";
+    width: 89%;
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: -11%;
+}
+#container:after{
+	content: "";
+    width: 89%;
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    display: inline-block;
+    position: relative;
+    right: -11%;
+}
+@media screen and (min-device-width: 426px) {
+    #container:after{
+    	    width: 110%
+    }
+   }
+@media screen and (min-device-width: 426px) {
+    #container:before{
+    	    width: 110%
+    }
+   }
+@media screen and (min-device-width: 480px) {
+    #container:after{
+    	    width: 89%
+    }
+   }
+@media screen and (min-device-width: 480px) {
+    #container:before{
+    	    width: 89%
+    }
+   }
+.res{
+	display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 9%;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-size: 16px;
+}
+.res span{
+	position: absolute;
+    left: 37%;
+}
+
+.last{
+margin-right: 5px;
+
+	}	
+
+#comments a{
+	text-decoration: none;
+	color: #000;
+	font-family: Arial Black, Gadget, sans-serif;
+	font-size: 16px;
+
+
+}
+@media screen and (max-device-width: 384px) {
+    #comments a{
+    	    font-size: 14px;
+    }
+   }
+#comments a+a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: underline;
+	color: #005da1;
+}
+
+#comments a+a+a{
+	font-size: 12px;
+	float: right;
+	margin-left: 10px;
+	text-decoration: none;
+	color: #000;
+
+}
+.com{
+	display: flex;
+}
+.com:before{
+	content: url(images/comment.png);
+	margin-right: 3px;
+
+}
+#like:before{
+	content: "❤";
+	color: #73b4d5;
+		margin-right: 3px;
+
+}
+.post{
+	margin-top: 15px;
+}
+.name{
+	font-family:  Arial Black, Gadget, sans-serif;
+	font-size: 14px;
+}
+.post>time{
+	font-size: 11px;
+	color: #808080;
+}
+#comments p{
+	padding: 15px;
+	background: #f2fbff;
+	border: 1px solid #cfcfcf;
+	margin: 20px 0;
+	position: relative;
+
+}
+#comments p:before{
+    content: "◣";
+    position: absolute;
+    top: -17px;
+    color: #cfcfcf;
+    left: 12px;
+    font-size: 20px;
+
+}
+#comments p:after{
+	content: "◣";
+    color: #f2fbff;
+    position: absolute;
+    top: -13px;
+    left: 13px;
+}
+#comments>div+div+div+div{
+	margin-bottom: 10px;
+}
+.footer{
+    background: #f2f2f2;
+    padding: 30px 0px;
+    position: relative;
+    width: 111%;
+    left: 0;
+    margin-left: -5.5%;
+    text-align: center;
+}
+#area{
+	width: 90%;
+	height: 65px;
+	border-radius: 5px;
+
+
+}
+#add{
+    font-family: 'PT Sans', sans-serif;
+    background: #fdd639;
+    padding: 12px 55px;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 18px;
+    border: 1px solid #fdd639;
+}
